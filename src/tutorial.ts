@@ -54,5 +54,48 @@ for (let book of books) {
 foundBook?.length
 
 
+let discount: number | string = 20;
+discount = "20%"
+// discount = true;
 
+let orderStatus: 'processing' | 'shipped' | 'delivered' = 'processing';
+orderStatus = 'shipped';
+// orderStatus = 'cancelled'
 
+// arrays in typescript
+let prices:number[] = [100, 75, 42,];
+prices.push(10);
+// prices.push('hello')
+
+let fruit: string[] = ['apple', 'orange'];
+fruit.push('mango')
+// fruit.push(false)
+
+// let randomValues:[] = ['hello']
+let emptyValues:number[] = []
+
+let names = ['peter', 'susan', 1];
+let arry:(string | boolean)[] = ['apple', true]
+
+let temperatures:number[] = [20, 25, 30];
+// temperatures.push('hot');
+
+let colors:string[] = ['red', 'green', 'blue'];
+// colors.push(true)
+
+let mixedArray:(number | string)[] = [1, 'two', 3];
+
+// objects in typescript
+let car:{brand: string; year: number} = {brand: 'toyota', year: 2020};
+
+car.brand = 'ford';
+// car.color = 'blue';
+
+let car1:{brand: string; year: number} = {brand: 'audi', year: 2022};
+
+let book = {title: 'book', cost:20}
+let pen = {title: 'pen', cost:10}
+let notebook = {title: 'notebook'}
+
+let items: { readonly title:string; cost?: number }[] = [book, pen, notebook];
+// items[0].title = 'new book';
