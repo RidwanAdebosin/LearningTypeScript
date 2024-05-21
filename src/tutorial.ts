@@ -111,3 +111,11 @@ let products: {title:string; price?: number}[] = [product1, product2];
 
 // products.push({title: "shoes", price: 'expensive'})
 
+function sayHi(name:string){
+    console.log(`Hello there ${name.toLocaleLowerCase()}`);
+    
+    
+}
+sayHi("Ridwan");
+// sayHi(3);
+
