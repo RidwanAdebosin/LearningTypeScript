@@ -119,3 +119,35 @@ function sayHi(name:string){
 sayHi("Ridwan");
 // sayHi(3);
 
+function calculateDiscount(price:number){
+    return price * 0.9;
+}
+
+const finalPrice= calculateDiscount(200);
+
+// Create a new array of names
+// Write a new function that checks if a name is in your Array. 
+// This function should take a name as a parameter and return a boolean.
+// Use this function to check if various names are in your array and log the results
+
+
+const userNames:string[] = ["Ridwan", "Adewale", "Faderera"];
+// function findName(userNames:string[]){
+//     let nameExist = userNames.find((e) => e.includes('Ridwan'))
+//     if (nameExist) {
+//         return true;
+//     } else
+//     return false;
+// }
+// console.log(findName( ["Ridwan", "Adewale", "Faderera"]));
+
+function isNameInList(name:string):boolean{
+    return userNames.includes(name);
+}
+let nameToCheck = 'Adewale'
+
+if(isNameInList(nameToCheck)){
+    console.log(`${nameToCheck} is in the list`);
+} else {
+    console.log(`${nameToCheck} is not in the list`);
+}
