@@ -165,6 +165,7 @@ let total = numbers.reduce((prev, curr) =>
 let result = sum('The total is : ', 1,2,3,4,5)
 console.log(result);
 
+
 function logMessage(message:string):void{
 console.log(message)
 // return 'Hello Typescript'
@@ -173,11 +174,18 @@ logMessage('Hello, Typescript');
 
 function processInput(message:string|number){
     if (typeof message === 'number'){
-        return message * 2;
+        console.log(message * 2) 
     } else {
-        return message.toUpperCase()
+        console.log( message.toUpperCase());
     }
 }
 
 processInput(10);
 processInput('Hello');
+
+function createEmployee({id}:{id:number}):{id:number;isActive:boolean}{
+    return {id, isActive: id % 2 === 0};
+};
+const first = createEmployee({id:1});
+const second = createEmployee({id:10});
+console.log(first, second)
