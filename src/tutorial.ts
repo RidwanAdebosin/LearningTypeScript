@@ -164,3 +164,20 @@ let total = numbers.reduce((prev, curr) =>
 }
 let result = sum('The total is : ', 1,2,3,4,5)
 console.log(result);
+
+function logMessage(message:string):void{
+console.log(message)
+// return 'Hello Typescript'
+}
+logMessage('Hello, Typescript');
+
+function processInput(message:string|number){
+    if (typeof message === 'number'){
+        return message * 2;
+    } else {
+        return message.toUpperCase()
+    }
+}
+
+processInput(10);
+processInput('Hello');
